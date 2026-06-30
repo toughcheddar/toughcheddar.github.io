@@ -15,11 +15,12 @@ build step, no dependencies — inline CSS in a single file.
 - Brand colours are CSS custom properties in the `:root` block: cream
   `#f4ead2`, navy `#1d3a5f`, cheese gold `#e8a317`. Reuse them; don't
   hard-code new one-off hexes.
-- Images go in `images/`. Add `loading="lazy"` and descriptive `alt` text.
-  Watch file size — `tough-cheddar-alt-logo.png` is ~5 MB and is only used as
-  the favicon/social image, not inlined in the page body.
-- Keep copy humble and plain. The studio makes Stackpot, a card game for all
-  ages. Avoid superlatives and marketing hype.
+- Images go in `images/`. Add descriptive `alt` text and watch file size;
+  the studio logo (`toughcheddar-studios-logo-1.png`) doubles as the favicon
+  and social image.
+- The page is intentionally just the studio logo + a link to itch.io. No game
+  screenshots — the games aren't ready to showcase yet.
+- Keep copy humble and plain. Avoid superlatives and marketing hype.
 
 ## Deploying
 

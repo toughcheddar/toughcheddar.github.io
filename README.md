@@ -11,7 +11,7 @@ It introduces the studio and links out to our games on
 ```
 .
 ├── index.html      # the whole site (inline CSS, no build step)
-├── images/         # logos and game screenshots
+├── images/         # studio logo
 ├── .nojekyll       # serve files as-is, skip Jekyll
 ├── CLAUDE.md       # notes for Claude Code
 └── README.md
@@ -42,4 +42,4 @@ the `:root` block at the top of `index.html`:
 
 - cream `#f4ead2`, navy `#1d3a5f`, cheese gold `#e8a317`
 
-Add new screenshots to `images/` and reference them from `index.html`.
+Add new images to `images/` and reference them from `index.html`.
