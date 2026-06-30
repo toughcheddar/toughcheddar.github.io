@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tough Cheddar Studios</title>
+  <meta name="description" content="Tough Cheddar Studios — a small game studio. Makers of Stackpot, a unique playing-card game for all ages." />
+  <link rel="icon" type="image/png" href="images/tough-cheddar-alt-logo.png" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Tough Cheddar Studios" />
+  <meta property="og:description" content="A small game studio. Makers of Stackpot, a unique playing-card game for all ages." />
+  <meta property="og:image" content="images/tough-cheddar-alt-logo.png" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --cream: #f4ead2;
+      --cream-dark: #ece0c2;
+      --navy: #1d3a5f;
+      --gold: #e8a317;
+      --gold-bright: #f5b81c;
+      --ink: #1a1a1a;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 1.25rem 3rem;
+    }
+    .hero img.logo {
+      width: min(420px, 80vw);
+      height: auto;
+      border-radius: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      margin: 1.5rem 0 0.5rem;
+      color: var(--navy);
+      letter-spacing: 0.02em;
+    }
+    .tagline {
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      color: #4a4a4a;
+      max-width: 36ch;
+      margin: 0 auto 2rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.85rem 1.8rem;
+      border-radius: 999px;
+      border: 2px solid var(--navy);
+      box-shadow: 0 3px 0 var(--navy);
+      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.15s ease;
+    }
+    .cta:hover { background: var(--gold-bright); }
+    .cta:active { transform: translateY(3px); box-shadow: 0 0 0 var(--navy); }
+
+    /* Game section */
+    section.game {
+      background: var(--cream-dark);
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      padding: 3rem 0;
+    }
+    section.game h2 {
+      text-align: center;
+      color: var(--navy);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin: 0 0 0.25rem;
+    }
+    section.game .lead {
+      text-align: center;
+      max-width: 50ch;
+      margin: 0 auto 2rem;
+      color: #4a4a4a;
+    }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .shots figure {
+      margin: 0;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(29, 58, 95, 0.15);
+    }
+    .shots img { display: block; width: 100%; height: auto; }
+    .shots figcaption {
+      padding: 0.6rem 0.9rem;
+      font-size: 0.9rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.25rem 3rem;
+      color: #5a5a5a;
+      font-size: 0.95rem;
+    }
+    footer a { color: var(--navy); font-weight: 600; }
+    footer .links { margin-bottom: 0.75rem; }
+    footer .links a { margin: 0 0.6rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img class="logo" src="images/toughcheddar-studios-logo-1.png" alt="Tough Cheddar Studios logo" />
+    <h1>Tough Cheddar Studios</h1>
+    <p class="tagline">A small game studio. We make games that are easy to learn and tough to put down.</p>
+    <a class="cta" href="https://toughcheddar.itch.io" target="_blank" rel="noopener">Play our games on itch.io →</a>
+  </header>
+
+  <section class="game">
+    <div class="wrap">
+      <h2>Stackpot</h2>
+      <p class="lead">A unique playing-card game for all ages. Collect cards by playing sequences and stacking — first to 20+ cards wins the pot.</p>
+      <div class="shots">
+        <figure>
+          <img src="images/about-to-win-web-prototype1.png" alt="Stackpot gameplay — a player about to win" loading="lazy" />
+          <figcaption>On the table — sequences, stacks and the jackpot</figcaption>
+        </figure>
+        <figure>
+          <img src="images/won-web-prototype1.png" alt="Stackpot end screen — Dave wins with 24 cards" loading="lazy" />
+          <figcaption>Collect 20+ cards to take the pot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="https://toughcheddar.itch.io" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://github.com/toughcheddar" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div>&copy; 2024–2026 Tough Cheddar Studios</div>
+  </footer>
+</body>
+</html>
